@@ -41,3 +41,6 @@ models.sequelize.sync().then(function() {
   });
 });
 
+
+//le test du commit
+
