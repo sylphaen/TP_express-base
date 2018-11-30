@@ -14,7 +14,7 @@ app.use(bodyParser.json())
 app.use(morgan('short'))
 
 // Get all the users defined
-/*app.get('/', function (req, res) {
+app.get('/', function (req, res) {
   models.User.findAll()
     .then((users) => {
       res.json(users)
@@ -31,7 +31,7 @@ app.post('/', function(req, res) {
     })
 })
 
-// Synchronize models
+ Synchronize models
 models.sequelize.sync().then(function() {
   /**
    * Listen on provided port, on all network interfaces.
@@ -44,9 +44,9 @@ app.get('/', function (req, res) {
 })
    
   app.listen(process.env.PORT, function() {
-    console.log('Express server listening on port 3000');
+    console.log('Express server listening on port 8080');
   });
-//});
+});
 
 
 //le test du commit
