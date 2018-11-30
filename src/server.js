@@ -40,3 +40,4 @@ models.sequelize.sync().then(function() {
     console.log('Express server listening on port 3000');
   });
 });
+
