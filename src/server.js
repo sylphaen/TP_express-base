@@ -2,7 +2,9 @@ const express = require('express')
 const bodyParser = require('body-parser');
 const morgan = require('morgan');
 const app = express()
-const models = require('./models/index');
+//const models = require('./models/index');
+
+process.env.ENABLE_METRICS
 
 // Decode json and x-www-form-urlencoded
 app.use(bodyParser.urlencoded({ extended: false }))
@@ -12,7 +14,7 @@ app.use(bodyParser.json())
 app.use(morgan('short'))
 
 // Get all the users defined
-app.get('/', function (req, res) {
+/*app.get('/', function (req, res) {
   models.User.findAll()
     .then((users) => {
       res.json(users)
